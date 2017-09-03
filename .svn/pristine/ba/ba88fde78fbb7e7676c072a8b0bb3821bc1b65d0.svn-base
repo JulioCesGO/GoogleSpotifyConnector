@@ -1,9 +1,0 @@
-package br.com.julioces.service;
-
-
-public interface IService<T> {
-
-	String GerarURLAuthenticacao(T entity);
-
-	T ExchangeRefreshOrAccessToken(T entity);
-}
