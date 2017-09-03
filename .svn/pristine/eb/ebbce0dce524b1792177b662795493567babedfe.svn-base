@@ -1,0 +1,37 @@
+package br.com.julioces.api;
+
+import java.io.Serializable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+//@Component
+//@Scope(value="session",proxyMode=ScopedProxyMode.DEFAULT)
+public class Google extends Basico implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private static Logger logger = LoggerFactory.getLogger(Google.class);
+	
+	public Google() {
+		logger.info("construtor");
+	}
+
+	
+	private String id_type;
+
+	
+
+	public String getId_type() {
+		return id_type;
+	}
+
+	public void setId_type(String id_type) {
+		this.id_type = id_type;
+	}
+	
+	
+	
+	
+}
